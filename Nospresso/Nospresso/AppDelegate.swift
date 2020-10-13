@@ -1,15 +1,16 @@
 //
 //  AppDelegate.swift
-//  JogoDaMemoria
+//  Nospresso
 //
-//  Created by Camille Grings on 10/10/20.
+//  Created by Camille Grings on 13/10/20.
 //
 
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    var deviceOrientation = UIInterfaceOrientationMask.landscape
+
+
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -29,9 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-    
-    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
-        return deviceOrientation
-    }
+
+
 }
 

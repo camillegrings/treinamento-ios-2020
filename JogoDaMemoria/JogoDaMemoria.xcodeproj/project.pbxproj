@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A78F14582536696400CA0B85 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F14572536696400CA0B85 /* Card.swift */; };
+		A7CBE6BD2532569A0053CC4C /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CBE6BC2532569A0053CC4C /* MemoryGame.swift */; };
 		A7F034FD2532001F00A1541E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F034FC2532001F00A1541E /* AppDelegate.swift */; };
 		A7F034FF2532001F00A1541E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F034FE2532001F00A1541E /* SceneDelegate.swift */; };
 		A7F035012532001F00A1541E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F035002532001F00A1541E /* ViewController.swift */; };
-		A7F035042532001F00A1541E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F035022532001F00A1541E /* Main.storyboard */; };
+		A7F035042532001F00A1541E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F035022532001F00A1541E /* Main.storyboard */; settings = {ASSET_TAGS = (teste, ); }; };
 		A7F035062532002000A1541E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F035052532002000A1541E /* Assets.xcassets */; };
 		A7F035092532002000A1541E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F035072532002000A1541E /* LaunchScreen.storyboard */; };
 		A7F035142532002000A1541E /* JogoDaMemoriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F035132532002000A1541E /* JogoDaMemoriaTests.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A78F14572536696400CA0B85 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A7CBE6BC2532569A0053CC4C /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		A7F034F92532001F00A1541E /* JogoDaMemoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JogoDaMemoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F034FC2532001F00A1541E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7F034FE2532001F00A1541E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7CBE6B22532538C0053CC4C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A7CBE6BB253256890053CC4C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A7CBE6BC2532569A0053CC4C /* MemoryGame.swift */,
+				A78F14572536696400CA0B85 /* Card.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A7F034F02532001F00A1541E = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +119,8 @@
 		A7F034FB2532001F00A1541E /* JogoDaMemoria */ = {
 			isa = PBXGroup;
 			children = (
+				A7CBE6BB253256890053CC4C /* Models */,
+				A7CBE6B22532538C0053CC4C /* Extensions */,
 				A7F034FC2532001F00A1541E /* AppDelegate.swift */,
 				A7F034FE2532001F00A1541E /* SceneDelegate.swift */,
 				A7F035002532001F00A1541E /* ViewController.swift */,
@@ -190,6 +212,9 @@
 		A7F034F12532001F00A1541E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					teste,
+				);
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
@@ -260,6 +285,8 @@
 			files = (
 				A7F035012532001F00A1541E /* ViewController.swift in Sources */,
 				A7F034FD2532001F00A1541E /* AppDelegate.swift in Sources */,
+				A78F14582536696400CA0B85 /* Card.swift in Sources */,
+				A7CBE6BD2532569A0053CC4C /* MemoryGame.swift in Sources */,
 				A7F034FF2532001F00A1541E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
