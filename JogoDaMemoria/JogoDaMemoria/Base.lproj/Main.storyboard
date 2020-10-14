@@ -24,7 +24,7 @@
                                         <state key="normal" title="Button" image="Card"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="tag">
-                                                <integer key="value" value="0"/>
+                                                <integer key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -36,7 +36,7 @@
                                         <state key="normal" title="Button" image="Card"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="tag">
-                                                <integer key="value" value="1"/>
+                                                <integer key="value" value="2"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -48,7 +48,7 @@
                                         <state key="normal" title="Button" image="Card"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="tag">
-                                                <integer key="value" value="2"/>
+                                                <integer key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -60,7 +60,7 @@
                                         <state key="normal" title="Button" image="Card"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="tag">
-                                                <integer key="value" value="3"/>
+                                                <integer key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -72,7 +72,7 @@
                                         <state key="normal" title="Button" image="Card"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="tag">
-                                                <integer key="value" value="4"/>
+                                                <integer key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -92,7 +92,7 @@
                                         <state key="normal" title="Button" image="Card"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="tag">
-                                                <integer key="value" value="5"/>
+                                                <integer key="value" value="6"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -104,7 +104,7 @@
                                         <state key="normal" title="Button" image="Card"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="tag">
-                                                <integer key="value" value="6"/>
+                                                <integer key="value" value="7"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -116,7 +116,7 @@
                                         <state key="normal" title="Button" image="Card"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="tag">
-                                                <integer key="value" value="7"/>
+                                                <integer key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -128,7 +128,7 @@
                                         <state key="normal" title="Button" image="Card"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="tag">
-                                                <integer key="value" value="8"/>
+                                                <integer key="value" value="9"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -140,7 +140,7 @@
                                         <state key="normal" title="Button" image="Card"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="tag">
-                                                <integer key="value" value="9"/>
+                                                <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -178,16 +178,16 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outletCollection property="cards" destination="kxv-lo-ZRv" collectionClass="NSMutableArray" id="vFa-rR-dMC"/>
-                        <outletCollection property="cards" destination="GoB-6w-6lh" collectionClass="NSMutableArray" id="3Tz-Ta-WjC"/>
-                        <outletCollection property="cards" destination="tVw-ee-0jr" collectionClass="NSMutableArray" id="Z1A-JK-07S"/>
-                        <outletCollection property="cards" destination="38H-KZ-tY7" collectionClass="NSMutableArray" id="kUH-hN-bU8"/>
-                        <outletCollection property="cards" destination="Od8-KZ-7KV" collectionClass="NSMutableArray" id="1tD-6J-Ikn"/>
-                        <outletCollection property="cards" destination="r9E-Os-3vY" collectionClass="NSMutableArray" id="4h3-zI-uFa"/>
-                        <outletCollection property="cards" destination="NQG-A4-lre" collectionClass="NSMutableArray" id="4Ol-F2-FP9"/>
-                        <outletCollection property="cards" destination="X88-wV-CkY" collectionClass="NSMutableArray" id="IHI-Lg-D04"/>
-                        <outletCollection property="cards" destination="hwx-08-S42" collectionClass="NSMutableArray" id="fHn-1R-ebG"/>
-                        <outletCollection property="cards" destination="Ng1-33-Z2g" collectionClass="NSMutableArray" id="QN0-hK-lt2"/>
+                        <outletCollection property="cardsButton" destination="kxv-lo-ZRv" collectionClass="NSMutableArray" id="vFa-rR-dMC"/>
+                        <outletCollection property="cardsButton" destination="GoB-6w-6lh" collectionClass="NSMutableArray" id="3Tz-Ta-WjC"/>
+                        <outletCollection property="cardsButton" destination="tVw-ee-0jr" collectionClass="NSMutableArray" id="Z1A-JK-07S"/>
+                        <outletCollection property="cardsButton" destination="38H-KZ-tY7" collectionClass="NSMutableArray" id="kUH-hN-bU8"/>
+                        <outletCollection property="cardsButton" destination="Od8-KZ-7KV" collectionClass="NSMutableArray" id="1tD-6J-Ikn"/>
+                        <outletCollection property="cardsButton" destination="r9E-Os-3vY" collectionClass="NSMutableArray" id="4h3-zI-uFa"/>
+                        <outletCollection property="cardsButton" destination="NQG-A4-lre" collectionClass="NSMutableArray" id="4Ol-F2-FP9"/>
+                        <outletCollection property="cardsButton" destination="X88-wV-CkY" collectionClass="NSMutableArray" id="IHI-Lg-D04"/>
+                        <outletCollection property="cardsButton" destination="hwx-08-S42" collectionClass="NSMutableArray" id="fHn-1R-ebG"/>
+                        <outletCollection property="cardsButton" destination="Ng1-33-Z2g" collectionClass="NSMutableArray" id="QN0-hK-lt2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

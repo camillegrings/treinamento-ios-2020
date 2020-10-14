@@ -11,12 +11,14 @@ import Foundation
 class Card {
     let id: Int
     let defaultImage = "Card"
-    let image: String
-    let isSelected: Bool
+    let type: CardTypes
+    var isSelected: Bool
+    var isMatched: Bool
     
-    internal init(id: Int, image: String, isSelected: Bool) {
+    internal init(id: Int, type: CardTypes) {
         self.id = id
-        self.image = image
-        self.isSelected = isSelected
+        self.type = type
+        self.isSelected = false
+        self.isMatched = false
     }
 }

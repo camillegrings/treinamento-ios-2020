@@ -8,57 +8,74 @@
 import Foundation
 
 class MemoryGame {
-
-    var cards: [String] = []
+    
     let maxNumberCards = 10
+    let maxNumberSelectedCards = 2
+    
+    var cards: [Card] = []
     
     private(set) var userAttempts: Int = 0
-    private(set) var currentCardsSelected: [Int] = []
-    private(set) var cardsMatched: [Int] = [] {
+    private(set) var currentCardsSelected: [Card] = []
+    private(set) var victory = false
+    private(set) var cardsMatched: Int = 0 {
         didSet {
-            if cardsMatched.count >= maxNumberCards {
+            if cardsMatched >= maxNumberCards {
                 victory = true
             }
         }
     }
     
-    private(set) var victory = false
-    
-    internal init(cards: [String] = []) {
+    internal init(cards: [Card] = []) {
         self.cards = cards
     }
     
-    func selectCard(index: Int) {
-        let isNewIndex = !currentCardsSelected.contains(index)
-        let isNotMatched = !cardsMatched.contains(index)
+    func selectCard(card: Card) {
+        guard !card.isSelected && !card.isMatched else { return }
         
-        guard isNewIndex && isNotMatched else { return }
-        
-        if currentCardsSelected.count == 2 {
-            currentCardsSelected.removeAll()
+        if currentCardsSelected.count == maxNumberSelectedCards {
+            clearPreviousSelectedCards()
         }
         
         if !currentCardsSelected.isEmpty {
-            checkForEqualCards(index: index)
+            checkForEqualCards(card: card)
         }
         
-        currentCardsSelected.append(index)
+        currentCardsSelected.append(card)
+        card.isSelected = true
+        
         userAttempts += 1
     }
     
-    func checkForEqualCards(index: Int) {
+    func checkForEqualCards(card: Card) {
         let firstCard = currentCardsSelected[0]
-        let isCardsEquals = cards[firstCard].elementsEqual(cards[index])
-        if isCardsEquals {
-            cardsMatched.append(firstCard)
-            cardsMatched.append(index)
+        
+        if firstCard.type == card.type {
+            firstCard.isMatched = true
+            card.isMatched = true
+            cardsMatched += 2
         }
     }
     
     func refreshGame() {
         userAttempts = 0
-        currentCardsSelected.removeAll()
-        cardsMatched.removeAll()
+        clearPreviousSelectedCards()
+        clearMatchedCards()
         victory = false
+    }
+    
+    func clearPreviousSelectedCards() {
+        for card in currentCardsSelected {
+            card.isSelected = false
+        }
+        
+        currentCardsSelected.removeAll()
+    }
+    
+    func clearMatchedCards(){
+        for card in cards {
+            card.isMatched = false
+        }
+        
+        cardsMatched = 0
     }
 }
