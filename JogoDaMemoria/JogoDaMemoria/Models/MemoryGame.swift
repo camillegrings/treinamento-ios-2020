@@ -79,3 +79,23 @@ class MemoryGame {
         cardsMatched = 0
     }
 }
+
+extension MemoryGame {
+    class func random() -> MemoryGame {
+        var cards: [Card] = []
+        
+        cards.append(generateNewCard(type: .Card_Anao, id: 1))
+        cards.append(generateNewCard(type: .Card_Bruxa, id: 2))
+        cards.append(generateNewCard(type: .Card_Cavaleiro, id: 3))
+        cards.append(generateNewCard(type: .Card_Elfa, id: 4))
+        cards.append(generateNewCard(type: .Card_Mago, id: 5))
+        
+        cards.append(generateNewCard(type: .Card_Anao, id: 6))
+        cards.append(generateNewCard(type: .Card_Bruxa, id: 7))
+        cards.append(generateNewCard(type: .Card_Cavaleiro, id: 8))
+        cards.append(generateNewCard(type: .Card_Elfa, id: 9))
+        cards.append(generateNewCard(type: .Card_Mago, id: 10))
+        
+        return MemoryGame(cards: cards.shuffled())
+    }
+}

@@ -12,6 +12,7 @@
 		A78F14582536696400CA0B85 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F14572536696400CA0B85 /* Card.swift */; };
 		A78F145D25368B5600CA0B85 /* CardTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78F145C25368B5600CA0B85 /* CardTypes.swift */; };
 		A7A2A7082537BD000005D455 /* MemoryGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A2A7072537BD000005D455 /* MemoryGameTests.swift */; };
+		A7A2A7232537E6640005D455 /* MemoryGameHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A2A7222537E6640005D455 /* MemoryGameHelpers.swift */; };
 		A7CBE6BD2532569A0053CC4C /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CBE6BC2532569A0053CC4C /* MemoryGame.swift */; };
 		A7F034FD2532001F00A1541E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F034FC2532001F00A1541E /* AppDelegate.swift */; };
 		A7F034FF2532001F00A1541E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F034FE2532001F00A1541E /* SceneDelegate.swift */; };
@@ -51,6 +52,7 @@
 		A78F14572536696400CA0B85 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		A78F145C25368B5600CA0B85 /* CardTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTypes.swift; sourceTree = "<group>"; };
 		A7A2A7072537BD000005D455 /* MemoryGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameTests.swift; sourceTree = "<group>"; };
+		A7A2A7222537E6640005D455 /* MemoryGameHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameHelpers.swift; sourceTree = "<group>"; };
 		A7CBE6BC2532569A0053CC4C /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		A7F034F92532001F00A1541E /* JogoDaMemoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JogoDaMemoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F034FC2532001F00A1541E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A7A2A7212537E6510005D455 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A7A2A7222537E6640005D455 /* MemoryGameHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		A7CBE6B22532538C0053CC4C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +161,7 @@
 		A7F034FB2532001F00A1541E /* JogoDaMemoria */ = {
 			isa = PBXGroup;
 			children = (
+				A7A2A7212537E6510005D455 /* Helpers */,
 				A7CBE6BB253256890053CC4C /* Models */,
 				A7CBE6B22532538C0053CC4C /* Extensions */,
 				A7F034FC2532001F00A1541E /* AppDelegate.swift */,
@@ -420,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7F035012532001F00A1541E /* ViewController.swift in Sources */,
+				A7A2A7232537E6640005D455 /* MemoryGameHelpers.swift in Sources */,
 				A7F034FD2532001F00A1541E /* AppDelegate.swift in Sources */,
 				A78F14582536696400CA0B85 /* Card.swift in Sources */,
 				A78F145D25368B5600CA0B85 /* CardTypes.swift in Sources */,
