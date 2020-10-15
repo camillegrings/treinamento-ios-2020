@@ -15,15 +15,20 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setButtonIdAccordingToCards()
+        setButtonTagAccordingToCards()
+        setButtonsInitalState(shouldAnimate: false)
     }
 
-    @IBAction func pressedImage(_ sender: UIButton) {
+    @IBAction func onButtonPress(_ sender: UIButton) {
         let index = sender.tag
         
         if let selectedCard = game.cards.first(where: { card in card.id == index }) {
             game.selectCard(card: selectedCard)
-//            UIView.transition(with: cardsButton[index-1], duration: 0.3, options: .transitionFlipFromRight, animations: nil, completion: nil)
+            
+            let image = UIImage(named: selectedCard.type.rawValue)
+            sender.setImage(image, for: .normal)
+            UIView.transition(with: sender, duration: 0.3, options: .transitionFlipFromRight, animations: nil, completion: nil)
+            
             updateCardButtons()
             checkStatusGame()
         }
@@ -36,7 +41,7 @@ class ViewController: UIViewController {
 
 extension ViewController {
     
-    private func setButtonIdAccordingToCards() {
+    private func setButtonTagAccordingToCards() {
         for (index, button) in cardsButton.enumerated() {
             button.tag = game.cards[index].id
         }
@@ -63,22 +68,32 @@ extension ViewController {
     
     private func resetState() {
         game = MemoryGame.random()
-        for cardButton in cardsButton {
-            cardButton.setImage(UIImage(named: "Card"), for: .normal)
+        setButtonsInitalState(shouldAnimate: true)
+        setButtonTagAccordingToCards()
+    }
+    
+    private func setButtonsInitalState(shouldAnimate: Bool) {
+        for button in cardsButton {
+            button.isUserInteractionEnabled = true
+            button.setImage(UIImage(named: "Card"), for: .normal)
+            if shouldAnimate {
+                UIView.transition(with: button, duration: 0.3, options: .transitionFlipFromRight, animations: nil, completion: nil)
+            }
         }
-        setButtonIdAccordingToCards()
     }
     
     private func updateCardButtons() {
-        for cardButton in cardsButton {
-            if let card = game.cards.first(where: { card in card.id == cardButton.tag }) {
-                var image = UIImage(named: card.defaultImage)
-               
-                if card.isSelected || card.isMatched {
-                    image = UIImage(named: card.type.rawValue)
+        let buttonsToChangeImage = cardsButton.filter({ $0.imageView?.image != UIImage(named: "Card") })
+
+        for button in buttonsToChangeImage {
+            if let card = game.cards.first(where: { card in card.id == button.tag }) {
+                if !card.isSelected && !card.isMatched {
+                    button.isUserInteractionEnabled = true
+                    button.setImage(UIImage(named: card.defaultImage), for: .normal)
+                    UIView.transition(with: button, duration: 0.3, options: .transitionFlipFromRight, animations: nil, completion: nil)
+                } else {
+                    button.isUserInteractionEnabled = false
                 }
-                
-                cardButton.setImage(image, for: .normal)
             }
         }
     }
