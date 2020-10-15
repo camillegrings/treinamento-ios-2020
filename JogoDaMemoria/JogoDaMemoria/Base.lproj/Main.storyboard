@@ -152,10 +152,12 @@
                                     <constraint firstAttribute="height" constant="110" id="8Qr-OV-Kx0"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIs-Eh-SgJ">
-                                <rect key="frame" x="714" y="20" width="122" height="52"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIs-Eh-SgJ">
+                                <rect key="frame" x="574" y="35" width="287" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <state key="normal" title="Reiniciar">
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="49" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="213" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Reiniciar" image="restart">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -166,15 +168,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="QIs-Eh-SgJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="2oR-p6-hWz"/>
                             <constraint firstItem="ekO-E0-kTW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5A5-98-k7H"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ekO-E0-kTW" secondAttribute="trailing" constant="-25" id="7Mc-C8-5Lv"/>
                             <constraint firstItem="Qhp-4G-Pco" firstAttribute="top" secondItem="ekO-E0-kTW" secondAttribute="bottom" constant="25" id="8Ge-iG-Zh4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QIs-Eh-SgJ" secondAttribute="trailing" constant="16" id="Ed3-g0-xfx"/>
+                            <constraint firstItem="QIs-Eh-SgJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="530" id="FnN-Gb-7B8"/>
                             <constraint firstItem="Qhp-4G-Pco" firstAttribute="leading" secondItem="ekO-E0-kTW" secondAttribute="leading" id="LBQ-yZ-xaW"/>
-                            <constraint firstItem="QIs-Eh-SgJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="rKM-Jp-QW7"/>
+                            <constraint firstItem="QIs-Eh-SgJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="35" id="csJ-Wi-cQV"/>
                             <constraint firstItem="ekO-E0-kTW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="u06-Po-wRr"/>
                             <constraint firstItem="Qhp-4G-Pco" firstAttribute="trailing" secondItem="ekO-E0-kTW" secondAttribute="trailing" id="yZS-bE-kfy"/>
+                            <constraint firstItem="QIs-Eh-SgJ" firstAttribute="trailing" secondItem="ekO-E0-kTW" secondAttribute="trailing" id="yeN-v8-jXD"/>
                         </constraints>
                     </view>
                     <connections>
@@ -197,6 +199,7 @@
     </scenes>
     <resources>
         <image name="Card" width="126" height="126"/>
+        <image name="restart" width="40" height="39.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
