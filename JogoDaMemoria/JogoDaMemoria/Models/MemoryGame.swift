@@ -46,7 +46,7 @@ class MemoryGame {
         userAttempts += 1
     }
     
-    func checkForEqualCards(card: Card) {
+    private func checkForEqualCards(card: Card) {
         let firstCard = currentCardsSelected[0]
         
         if firstCard.type == card.type {
@@ -63,7 +63,7 @@ class MemoryGame {
         victory = false
     }
     
-    func clearPreviousSelectedCards() {
+    private func clearPreviousSelectedCards() {
         for card in currentCardsSelected {
             card.isSelected = false
         }
@@ -71,7 +71,7 @@ class MemoryGame {
         currentCardsSelected.removeAll()
     }
     
-    func clearMatchedCards(){
+    private func clearMatchedCards(){
         for card in cards {
             card.isMatched = false
         }
