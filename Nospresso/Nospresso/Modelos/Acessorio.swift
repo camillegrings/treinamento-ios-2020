@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Acessorios: Decodable {
+public struct Acessorio: Decodable {
     let categoria: String
     let itens: [AcessorioItem]
 }

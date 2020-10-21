@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+public struct CategoriaCafe: Decodable {
+    let categoria: String
+    let cafes: [Cafe]
+}
