@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MedidaView2">
+            <rect key="frame" x="0.0" y="0.0" width="81" height="24"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G5f-E7-bVj">
+                    <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="S4a-Yr-Fil"/>
+                        <constraint firstAttribute="width" constant="24" id="atg-K4-veW"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gf7-gC-hN0">
+                    <rect key="frame" x="28" y="1" width="45" height="22"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="12"/>
+                    <color key="textColor" name="TextoDiscreto"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="G5f-E7-bVj" secondAttribute="bottom" id="8sn-aw-lSz"/>
+                <constraint firstItem="G5f-E7-bVj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Vkc-Rc-mJe"/>
+                <constraint firstItem="Gf7-gC-hN0" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="WFm-9w-vtO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Gf7-gC-hN0" secondAttribute="bottom" constant="1" id="XHH-RQ-peR"/>
+                <constraint firstItem="Gf7-gC-hN0" firstAttribute="leading" secondItem="G5f-E7-bVj" secondAttribute="trailing" constant="4" id="Z8K-A4-eYA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Gf7-gC-hN0" secondAttribute="trailing" constant="8" id="mr9-T8-rAS"/>
+                <constraint firstItem="G5f-E7-bVj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xQt-vh-dVD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="canequinhaImageView" destination="G5f-E7-bVj" id="PAc-iA-Tki"/>
+                <outlet property="nomeLabel" destination="Gf7-gC-hN0" id="9Mz-KI-PxM"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="82"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="TextoDiscreto">
+            <color red="0.56862745098039214" green="0.56862745098039214" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
